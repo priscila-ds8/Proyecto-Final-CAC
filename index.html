@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase 6 html</title>
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+    <body>
+        <header>
+            <img src="./assets/imagenes/codoacodo.png" alt="logo de codo a codo" loading="lazy"> 
+            <h2>Conf Bs As</h2>
+            <nav>
+                <a href="#">La Conferencia</a>
+                <a href="./pages/los_oradores.html">Los oradores</a>
+                <a href="./pages/lugar_y_fecha.html">El Lugar y la Fecha</a>
+                <a href="./pages/contacto.html">Conviértete en orador</a>
+                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img src="./assets/imagenes/ba1.jpg" alt="Imagen de Buenos Aires Palacio de Aguas" loading="lazy" width="700">
+                <h1>Conferencia Bs. As.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum voluptatibus pariatur, maxime magnam iste explicabo excepturi quis. Nesciunt quidem rerum ex mollitia natus distinctio saepe sint quaerat culpa eveniet!</p>
+                <a href="./pages/contacto.html">Quiero ser orador</a>
+                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+            </section>
+        </main>
+
+            <section>
+                <div style="background-color:aqua">
+                    <img src="./assets/imagenes/steve.jpg" alt="steve jobs" loading="lazy" width="200">
+                    <h3> Steve Job</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
+                </div>
+            
+                <div style="background-color:rgb(102, 255, 0)">
+                    <img src="./assets/imagenes/bill.jpg" alt="bill gates" loading="lazy" width="200">
+                    <h3> Bill Gates </h3>
+                    <p> <span style="background-color:blanchedalmond" > ipsum dolor sit amet consectetur adipisicing elit. </span>  <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
+                </div>
+            
+                <div style="background-color:rgb(98, 0, 255)">
+                    <img src="./assets/imagenes/ada.jpeg" alt="ada lovelace" loading="lazy"width="200">
+                    <h3> Ada Lovelace </h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
+                </div>
+            </section>
+
+            <section>
+                <img src="./assets/imagenes/honolulu.jpg" alt="playa de buenos aires" loading="lazy"width="500">
+                <div>
+                    <h3>Bs. As. - Octubre</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis reprehenderit incidunt molestias pariatur sit, optio magni obcaecati dolore? Eveniet animi soluta, ea minus vero beatae reiciendis expedita possimus corrupti.</p>
+                    <a href="">Conoce más</a>
+                </div>
+            </section>
+            <br><br>
+
+            <section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Orador</th>
+                            <th>Días</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Steve Jobs</td>
+                            <td>Lunes y Miércoles</td>
+                            <td>18:30 a 20hs</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Bill Gates</td>
+                            <td>Martes y Jueves</td>
+                            <td>18:30 a 20hs</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ada Lovelace</td>
+                            <td>Lunes y Miércoles</td>
+                            <td>10 a 11:30hs</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>             
+                            <td style="background-color:rgb(195, 226, 72)" colspan="5" > <a href="">Comprar Tickets</a> </td>
+                        </tr>
+                    </tfoot>  
+                </table>           
+            </section>
+            <br><br>
+
+            <section>
+                <form action="">
+
+                    <div>
+                        <input type="text" placeholder="Nombre" autofocus>
+                        <input type="text" placeholder="Apellido">           
+                    </div>
+                    <br>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Contraseña</label>
+                        <input type="password" required>
+                    </div>
+                    <br>       
+
+                    <div>
+                        <textarea name="" id="" cols="45" rows="5" placeholder="Sobre que quieres hablar"></textarea>
+                    </div>
+                   <p>Recuérda incluir un título para tu charla</p>
+                   <div>
+                    Indique su provincia 
+                    <select name="" id="">
+                        <option value="">Tucumán</option>
+                        <option value="">Salta</option>
+                        <option value="">Jujuy</option>
+                        <option value="">Catamarca</option>
+                        <option value="">Santiago del Estero</option>               
+                    </select>
+                   </div>
+                   <div>
+                    <input type="submit">
+                    <input type="reset">
+                   </div>
+
+
+                </form>
+
+
+            </section>
+            <br><br>
+
+            <aside>
+                <h3>Espacio para publicidad</h3>
+                <img src="" alt="imagen de la publicidad">
+            </aside>
+            <br>
+            <footer>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Contáctanos</a>
+                <a href="">Prensa</a>
+                <a href="">Conferencias</a>
+                <a href="">Términos y Condiciones</a>
+                <a href="">Privacidad</a>
+                <a href="">Estudiantes</a>
+            </footer>
+
+    </body>
+</html>
