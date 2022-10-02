@@ -4,157 +4,201 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clase 6 html</title>
+        <title>PROYECTO FINAL CAC</title>
         <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">        
     </head>
     <body>
+
+     <!---------------------- HEADER ------------------------------------>
         <header>
-            <img src="./assets/imagenes/codoacodo.png" alt="logo de codo a codo" loading="lazy"> 
-            <h2>Conf Bs As</h2>
-            <nav>
-                <a href="#">La Conferencia</a>
-                <a href="./pages/los_oradores.html">Los oradores</a>
-                <a href="./pages/lugar_y_fecha.html">El Lugar y la Fecha</a>
-                <a href="./pages/contacto.html">Conviértete en orador</a>
-                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
+            <nav class="navbar navbar-expand-lg navbar-light bgColorGris">
+                <div class="container-fluid">
+                  <a class="  navbar-brand text-white" href="#">
+                    <img src="./assets/imagenes/codoacodo.png" alt="logo" width="100"> 
+                    Conf Bs As                                      
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">                  
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0  justificadoNav">
+                            <li class="nav-item"><a class="nav-link active text-white" aria-current="page" href="#">La conferencia</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="#losOradores">Los oradores</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="#lugarYfecha">El lugar y la fecha</a></li>
+                            <li class="nav-item"><a class="nav-link text-muted" href="#convierteteEnOrador">Conviértete en orador</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="./pages/comprartickets.html">Comprar Tickets</a></li>                                                      
+                        </ul>                   
+                  </div>
+                </div> 
             </nav>
         </header>
-
+        
+        <!------------------------ MAIN ------------------------------------>
         <main>
-            <section>
-                <img src="./assets/imagenes/ba1.jpg" alt="Imagen de Buenos Aires Palacio de Aguas" loading="lazy" width="700">
-                <h1>Conferencia Bs. As.</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eum voluptatibus pariatur, maxime magnam iste explicabo excepturi quis. Nesciunt quidem rerum ex mollitia natus distinctio saepe sint quaerat culpa eveniet!</p>
-                <a href="./pages/contacto.html">Quiero ser orador</a>
-                <a href="./pages/comprar_tickets.html">Comprar tickets</a>
-            </section>
+            <section class="position-relative">                
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner imagenOscurecida">
+                          <div class="carousel-item active">
+                            <img src="./assets/imagenes/ba1.jpg" class="d-block w-100" alt="baires 1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/imagenes/ba2.jpg" class="d-block w-100" alt="baires 2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./assets/imagenes/ba3.jpg" class="d-block w-100" alt="baires 3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                        <div class="position-absolute posicionTexto text-white">
+                            <h1>Conferencia Bs. As.</h1>
+                            <p class="align-items-end"> Bs As llega por primera vez a la Argentina. Un evento para compartir con nuestra comunidad, el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                            <a class="btn btn-outline-light" href="#convierteteEnOrador">Quiero ser orador</a>
+                            <button type="button" class="btn btn-success">Comprar tickets</button>                    
+                        </div>    
+                    </div>                             
+            </section>             
         </main>
 
-            <section>
-                <div style="background-color:aqua">
-                    <img src="./assets/imagenes/steve.jpg" alt="steve jobs" loading="lazy" width="200">
-                    <h3> Steve Job</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
+        <!------------------------------ SECCIÓN TARJETAS X3 ------------------------->
+        <section class="seccionTarjetas" id="losOradores">
+                <div class="text-center mt-3" >
+                    <p class="h6">CONOCE A LOS</p> 
+                    <p class="h2">ORADORES</p>                      
                 </div>
-            
-                <div style="background-color:rgb(102, 255, 0)">
-                    <img src="./assets/imagenes/bill.jpg" alt="bill gates" loading="lazy" width="200">
-                    <h3> Bill Gates </h3>
-                    <p> <span style="background-color:blanchedalmond" > ipsum dolor sit amet consectetur adipisicing elit. </span>  <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
+                <div class="row row-cols-1 row-cols-md-3 g-4 margenTarjetas">
+                    <div class="col shadow p-3 mb-5 bg-body rounded">
+                      <div class="card h-100">
+                        <img src="./assets/imagenes/steve.jpg" class="card-img-top object-fit" alt="steve jobs">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark">JavaScript</span>
+                          <span class="badge bg-info">React</span>       
+                          <h5 class="card-title">Steve Jobs</h5>
+                          <p class="card-text">Empresario, diseñador industrial, magnate empresarial estadounidense. Cofundador y presidente de Apple.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col shadow p-3 mb-5 bg-body rounded">
+                      <div class="card h-100">
+                        <img src="./assets/imagenes/bill.jpg" class="card-img-top" alt="Bill gates">
+                        <div class="card-body">
+                          <span class="badge bg-warning text-dark">JavaScript</span>
+                          <span class="badge bg-info">React</span>
+                          <h5 class="card-title">Bill Gates</h5>
+                          <p class="card-text">Empresario, informático y filántropo estadounidense Fundador, junto con Paul Allen, de la empresa Microsoft.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col shadow p-3 mb-5 bg-body rounded">
+                      <div class="card h-100">
+                        <img src="./assets/imagenes/ada.jpeg" class="card-img-top" alt="ada lovelace">
+                        <div class="card-body">
+                          <span class="badge bg-secondary">Negocios</span>
+                          <span class="badge bg-danger">Startups</span>
+                          <h5 class="card-title">Ada Lovelace</h5>
+                          <p class="card-text">Matemática y escritora británica, célebre por su trabajo acerca de la computadora mecánica denominada máquina analítica</p>
+                        </div>
+                      </div>
+                    </div>           
+                  </div>                       
+        </section>
+
+        <!-------------------------- SECCIÓN HORARIOS y FECHAS ---------------------------->
+        <section>
+          <table class="table ancho table-striped">
+              <thead>
+                <tr>                    
+                  <th scope="col">Orador</th>
+                  <th scope="col">Días</th>
+                  <th scope="col">Horarios</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Steve Jobs</td>
+                      <td>Lunes y Miércoles</td>
+                      <td>18:30 a 20hs</td>
+                  </tr>                    
+                  <tr>
+                      <td>Bill Gates</td>
+                      <td>Martes y Jueves</td>
+                      <td>18:30 a 20hs</td>
+                  </tr>                    
+                  <tr>
+                      <td>Ada Lovelace</td>
+                      <td>Lunes y Miércoles</td>
+                      <td>10 a 11:30hs</td>
+                  </tr>
+              </tbody>
+          </table> 
+      </section>
+                                  
+        <!-------------------- SECCION DIVIDIDA --------------------------->
+        <div class="mt-4 row g-0 bg-light position-relative" id="lugarYfecha">
+            <div class="col-md-6 mb-md-0 bordeSeccionDiv">
+              <img src="./assets/imagenes/honolulu.jpg" class="w-100" alt="imagen izquierda">
+            </div>
+            <div class="col-md-5 p-5 ps-md-4 SeccDiv">
+              <h5 class="mt-0 text-white">Bs. As. - Octubre</h5>
+              <p class="text-white"> Uno de los destinos turísticos más reconocidos de Hispanoamérica. Destaca por su carácter cosmopolita y el espíritu acogedor de sus habitantes, que te recibirán con las manos abiertas.               
+              Rodeada de imponentes edificios del siglo XIX, monumentos, museos, innumerables atracciones para visitar y por supuesto, los más reconocidos platos de su gastronomía.</p>
+              <button type="button" class="btn btn-outline-light">Conocé más</button>
+            </div>
+        </div>
+
+            <!------------------------- CONVIERTETE EN ORADOR -------------------->
+           <section id="convierteteEnOrador" class="container mx-auto">
+            <div class="text-center mt-5">
+                <p class="h6">CONVIÉRTETE EN UN</p> 
+                <p class="h2">ORADOR</p>                      
+            </div>
+            <div class="text-center">
+                <p> Anótate como orador para dar una <abbr title="Presentación de un proyecto en 5 minutos">charla ignite</abbr> Cuéntanos de que quieres hablar!</p>                                           
+            </div>
+            <div class="row ancho">
+                <div class="col mb-3 d-flex">                
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Apellido">
                 </div>
-            
-                <div style="background-color:rgb(98, 0, 255)">
-                    <img src="./assets/imagenes/ada.jpeg" alt="ada lovelace" loading="lazy"width="200">
-                    <h3> Ada Lovelace </h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Aliquid vel tempore quod sunt accusamus obcaecati quae repellendus tempora quos voluptate? <br> Corporis soluta magni ullam enim suscipit eveniet iusto unde libero? </p>
-                </div>
-            </section>
+            </div>              
+            <div class="row ancho">
+                <div class=" col mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="45" rows="5" placeholder="Sobre qué quieres hablar?"></textarea> 
+                    <div id="emailHelp" class="form-text">Recuerda incluir un título para tu charla</div>
+                </div>                           
+            </div>        
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn text-white colorButton" type="button">Enviar</button>                
+            </div>            
+           </section>
 
-            <section>
-                <img src="./assets/imagenes/honolulu.jpg" alt="playa de buenos aires" loading="lazy"width="500">
-                <div>
-                    <h3>Bs. As. - Octubre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis omnis reprehenderit incidunt molestias pariatur sit, optio magni obcaecati dolore? Eveniet animi soluta, ea minus vero beatae reiciendis expedita possimus corrupti.</p>
-                    <a href="">Conoce más</a>
-                </div>
-            </section>
-            <br><br>
-
-            <section>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Orador</th>
-                            <th>Días</th>
-                            <th>Horario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Steve Jobs</td>
-                            <td>Lunes y Miércoles</td>
-                            <td>18:30 a 20hs</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Bill Gates</td>
-                            <td>Martes y Jueves</td>
-                            <td>18:30 a 20hs</td>
-                        </tr>
-                        
-                        <tr>
-                            <td>Ada Lovelace</td>
-                            <td>Lunes y Miércoles</td>
-                            <td>10 a 11:30hs</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>             
-                            <td style="background-color:rgb(195, 226, 72)" colspan="5" > <a href="">Comprar Tickets</a> </td>
-                        </tr>
-                    </tfoot>  
-                </table>           
-            </section>
-            <br><br>
-
-            <section>
-                <form action="">
-
-                    <div>
-                        <input type="text" placeholder="Nombre" autofocus>
-                        <input type="text" placeholder="Apellido">           
-                    </div>
-                    <br>
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email">
-                    </div>
-                    <div>
-                        <label for="">Contraseña</label>
-                        <input type="password" required>
-                    </div>
-                    <br>       
-
-                    <div>
-                        <textarea name="" id="" cols="45" rows="5" placeholder="Sobre que quieres hablar"></textarea>
-                    </div>
-                   <p>Recuérda incluir un título para tu charla</p>
-                   <div>
-                    Indique su provincia 
-                    <select name="" id="">
-                        <option value="">Tucumán</option>
-                        <option value="">Salta</option>
-                        <option value="">Jujuy</option>
-                        <option value="">Catamarca</option>
-                        <option value="">Santiago del Estero</option>               
-                    </select>
-                   </div>
-                   <div>
-                    <input type="submit">
-                    <input type="reset">
-                   </div>
-
-
-                </form>
-
-
-            </section>
-            <br><br>
-
-            <aside>
-                <h3>Espacio para publicidad</h3>
-                <img src="" alt="imagen de la publicidad">
-            </aside>
-            <br>
-            <footer>
-                <a href="">Preguntas frecuentes</a>
-                <a href="">Contáctanos</a>
-                <a href="">Prensa</a>
-                <a href="">Conferencias</a>
-                <a href="">Términos y Condiciones</a>
-                <a href="">Privacidad</a>
-                <a href="">Estudiantes</a>
+           <div>
+            <a class="text-decoration-none btn-sm btn-secondary ps-xxl-2 float-end my-2 me-2 tamañoMq" href="#" role="button">Volver al inicio</a>
+           </div>
+           
+            <!----------------------------- FOOTER -------------------------->
+            <footer class="mt-5 estilosFooter">
+              <div class="container">
+                <div class="row">
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Preguntas frecuentes</a> </div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Contáctanos</a> </div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Prensa</a></div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Conferencias</a></div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Términos y Condiciones</a></div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Privacidad</a></div>
+                  <div class="col"> <a class="text-decoration-none text-white" href="">Estudiantes</a></div>
+                </div>                
+              </div>                
             </footer>
 
+        <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

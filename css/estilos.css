@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* ---------------------------------HEADER ------------------------------- */
+.bgColorGris{
+    background-color: rgb(52, 58, 64);
+}
+    
+.justificadoNav{
+    display: flex;
+    padding-left: 30%;
+    padding-right: 10%;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* --------------------------------- MAIN -----------------------------*/
+.imagenOscurecida{
+    filter: brightness(40%)
+}
+.posicionTexto{
+    top:50%;
+    left: 50%; 
+    padding-right: 4rem;
+    text-align: right;
+}
+
+/* ----------------------------- SECCIÓN TARJETAS x3 -------------------------*/
+.seccionTarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.margenTarjetas{
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* -------------------- SECCION DIVIDIDA ----------------------------*/
+.SeccDiv{
+    background-color: rgb(53,58,64);
+    width: 50%;
+}
+.bordeSeccionDiv{
+    width: 50%;
+    border-right: white solid 0.09rem;
+}
+
+/* ----------------------- CONVIERTETE EN ORADOR -----------------------------*/
+.ancho{
+    width: 50%;
+    margin: 0 auto;
+}
+.colorButton{
+    background-color: rgb(150, 201, 62);
+}
+/* ------------------------------ FOOTER --------------------------------*/
+.estilosFooter{
+    background: #1d3a4a;
+    background: linear-gradient(80deg,#1d3a4a 5%, #1e5170 45%);
+    background: -webkit-linear-gradient(80deg,#1d3a4a 5%, #1e5170 45%);
+    background: -moz-linear-gradient(80deg,#1d3a4a 5%, #1e5170 45%);
+    padding: 1%;
+}
+
+
+/* -------------------  MEDIA QUERIES --------------------------------*/
+@media screen and (max-width:500px){
+
+.posicionTexto{
+    top: 8%;
+    left:11%;
+    font-size: 0.5rem;    
+    text-align: justify;
+    justify-content: center;
+}
+
+.ancho{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.SeccDiv{
+    width: 100%;
+}
+
+.bordeSeccionDiv{
+    width: 100%;
+    border-right: white solid 0.09rem;
+}
+
+.tamañoMq{
+    font-size: 0.5rem;
+}
+.estilosFooter{
+    font-size: 0.3rem;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
