@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO FINAL CAC</title>
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+  <!--------------------------------------------------HEADER ------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bgColorGris">
+            <div class="container-fluid">
+              <a class="  navbar-brand text-white" href="#">
+                <img src="../assets/imagenes/codoacodo.png" alt="logo" width="100"> 
+                Conf Bs As                                      
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">                  
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  justificadoNav">
+                        <li class="nav-item"><a class="nav-link text-muted" aria-current="page" href="../index.html">La conferencia</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" href="../index.html">Los oradores</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" href="../index.html">El lugar y la fecha</a></li>
+                        <li class="nav-item"><a class="nav-link text-muted" href="../index.html">Conviértete en orador</a></li>
+                        <li class="nav-item"><a class="nav-link text-success btn btn-outline-success active text-white" href="#">Comprar Tickets</a></li>  
+                    </ul>                   
+              </div>
+            </div>            
+        </nav>
+    </header>
+
+    <!-------------------------------------- TARJETAS ESTUDIANTE, TRAINEE, JUNIOR---------------------------------->
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-1 cardTickets">
+            <div class="card border-primary mb-3 text-center mx-2 px-0" style="max-width: 15rem;">
+              <div class="card-header bg-primary text-white mx-0"><h5 class="card-title">Estudiante</h5></div>
+              <div class="card-body">                
+                <p class="card-text">Tienen un descuento</p>
+                <h3>80%</h3>
+                <p class="text-secondary tamañoLetra">*Presentar documentación</p>
+              </div>
+            </div>
+            <div class="card border-info mb-3 text-center mx-2 px-0" style="max-width: 15rem;">
+              <div class="card-header bg-info text-white mx-0"><h5 class="card-title">Trainee</h5></div>
+              <div class="card-body">                
+                <p class="card-text">Tienen un descuento</p>
+                <h3>50%</h3>
+                <p class="text-secondary tamañoLetra">*Presentar documentación</p>
+              </div>
+            </div>
+            <div class="card border-warning mb-3 text-center mx-2 px-0" style="max-width: 15rem;">
+              <div class="card-header bg-warning text-white mx-0"><h5 class="card-title">Junior</h5></div>
+              <div class="card-body">                
+                <p class="card-text">Tienen un descuento</p>
+                <h3>15%</h3>
+                <p class="text-secondary tamañoLetra">*Presentar documentación</p>
+              </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-------------------------------------------------- VALOR TICKET -------------------------------------------------->
+    <section class="container mx-auto mt-0">
+        <div class="text-center mt-5">
+            <p class="h6">VENTA</p>
+            <p class="h2">VALOR DEL TICKET $200</p>                          
+        </div>
+
+        <div class="row ancho">
+            <div class="col mb-3 d-flex">                
+                <input type="text" class="form-control" id="nombre" aria-label="Nombre" placeholder="Nombre" required> 
+                <input type="text" class="form-control" id="apellido" aria-label="Apellido" placeholder="Apellido" required>               
+            </div>
+            <div>
+              <input type="email" class="form-control" id="email" aria-label="Email" placeholder="Email" required>              
+            </div>     
+            <div class="row gx-2">
+              <div class="col-md mb-3">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" aria-label="Cantidad" placeholder="Cantidad" aria-label="cantidad" required>
+              </div>
+              
+              <div class="col-md mb-3">
+                <label for="categoriaSelect" class="form-label">Categoria</label>
+                <select class="form-select" aria-label="Categoria" id="categoria">
+                  <option value="" selected> -- Seleccionar --</option>
+                  <option value="0">Sin categoría</option>
+                  <option value="1">Estudiante</option>
+                  <option value="2">Trainee</option>
+                  <option value="3">Junior</option>
+                </select>
+              </div>     
+            </div>
+
+            <div class="alert alert-primary mt-2" role="alert">
+              Total a pagar: $ <span id="totalPagar" class="align-middle"></span>
+            </div>
+
+            <div class="col-md mb-3 d-flex">
+                <button class="form-control btn text-white colorButton" id="borrar" type="button">Borrar</button>               
+                <button class="form-control btn text-white colorButton" id="resumen" type="button">Resumen</button>               
+            </div>         
+        </div>             
+       </section>
+       
+    <!----------------------------- FOOTER -------------------------->
+    <footer class="mt-5 estilosFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col"> <a class="text-decoration-none text-white" href="">Preguntas frecuentes</a> </div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Contáctanos</a> </div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Prensa</a></div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Conferencias</a></div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Términos y Condiciones</a></div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Privacidad</a></div>
+            <div class="col"> <a class="text-decoration-none text-white" href="">Estudiantes</a></div>
+          </div>                
+        </div>                
+      </footer>
+
+      
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/main.js"></script>
+     <!--<script src="../js/bootstrap.bundle.min.js"></script> --> 
+      
+
+</body>
+</html>

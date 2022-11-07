@@ -10,7 +10,7 @@
     
 .justificadoNav{
     display: flex;
-    padding-left: 30%;
+    padding-left: 25%;
     padding-right: 10%;
     justify-content: space-around;
     width: 100%;
@@ -66,6 +66,16 @@
     padding: 1%;
 }
 
+/*--------------------------------PAGINA COMPRA D TICKETS --------------------------------------------------*/
+.tamañoLetra {
+    font-size: 0.8rem;
+}
+
+.cardTickets {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 
 /* -------------------  MEDIA QUERIES --------------------------------*/
 @media screen and (max-width:500px){
@@ -96,7 +106,7 @@
     font-size: 0.5rem;
 }
 .estilosFooter{
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     justify-content: space-around;
     padding-left: 2rem;
     padding-right: 2rem;
