@@ -32,7 +32,7 @@ function quitarClaseError () {
 
 function resetTotalPagar () {
    quitarClaseError ();
-   totalPagar.innerHTML = '';
+   totalPagar.innerHTML = "";
 }
 
 function totalPagar () {
@@ -59,7 +59,6 @@ function totalPagar () {
       return;
    }
    
-
    if ((cantidad.value <= 0))   {
       alert ("Por favor, ingresá la cantidad correcta de tickets");
       cantidad.classList.add ("is-invalid");
@@ -78,21 +77,43 @@ function totalPagar () {
 // ----------------- LOGICA -------------------------
 let totalValorTickets = (cantidad.value) * valorTicket;
 
-if (categoria.value == 0) {
-   totalValorTickets = totalValorTickets;
-}
-else if (categoria.value == 1) {
-   totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
-}
-else if (categoria.value == 2) {
-   totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
-}
-else if (categoria.value == 3) {
-   totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
-}
+//if (categoria.value == 0) {
+//   totalValorTickets = totalValorTickets;
+//}
+//else if (categoria.value == 1) {
+//   totalValorTickets = totalValorTickets - (descuentoEstudiante / 100 * totalValorTickets);
+//}
+//else if (categoria.value == 2) {
+//   totalValorTickets = totalValorTickets - (descuentoTrainee / 100 * totalValorTickets);
+//}
+//else if (categoria.value == 3) {
+//   totalValorTickets = totalValorTickets - (descuentoJunior / 100 * totalValorTickets);
+//}
 
-totalPagar.innerHTML = totalValorTickets;
+
+
+switch (categoria.value) {
+   case "0":
+    totalPagar.innerHTML = (totalValorTickets = totalValorTickets);
+    break;
+      
+    case "1":
+    totalPagar.innerHTML = (totalValorTickets = (totalValorTickets - (descuentoEstudiante/100*totalValorTickets)))
+    break;
+
+    case "2":
+    totalPagar.innerHTML = (totalValorTickets = (totalValorTickets-(descuentoTrainee/100*totalValorTickets)))
+    break;
+    
+    case "3":
+    totalPagar.innerHTML = (totalValorTickets =(totalValorTickets-(descuentoJunior/100*totalValorTickets)))
+    break;
+    
+    default:
+    break;
 } 
-
-borrar.addEventListener ('click', resetTotalPagar);
-resumen.addEventListener ('click', totalPagar);
+   totalPagar.innerHTML = totalValorTickets;
+}
+ 
+btnBorrar.addEventListener ('click', resetTotalPagar);
+btnResumen.addEventListener ('click', totalPagar);
